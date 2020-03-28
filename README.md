@@ -7,7 +7,7 @@ antes dos testes serem realizados.
   
 Procure pelo arquivo "Step_mapping.java", localizado em src/test/java/steps_map e encontre a seção:
 
-'''
+```java
   @Given ("Acessada a pagina do Submarino")
     public void submarino_homePage() {
     	System.setProperty("webdriver.firefox.driver", "FIREFOX_PATH");
@@ -16,7 +16,7 @@ Procure pelo arquivo "Step_mapping.java", localizado em src/test/java/steps_map 
 	    driver.manage().window().maximize();
 	    driver.manage().deleteAllCookies();
     }
-'''
+```
 
   Onde possui "FIREFOX_PATH", substitua pelo diretório onde se encontra o arquivo de driver do 
   Mozilla Firefox ("Geckodriver").
